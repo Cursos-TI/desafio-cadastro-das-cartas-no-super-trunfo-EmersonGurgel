@@ -19,7 +19,7 @@ int main(){
     // Exiba os valores inseridos para cada atributo da cidade, um por linha.
 
  
-// Definição de variáveis;
+// Definição de variáveis do estado A01;
 char estado;
 char codigo[20];
 char nomedacidade[20];
@@ -29,7 +29,7 @@ float pib;
 int pontosturisticos;
 
 //titulo de apresentação;
-printf("Desafio super trunfo em C\n");
+printf("Bem vindo ao Desafio Super Trunfo\n\n");
 
 // dizendo ao usuario as informações que serão coletadas e coletando elas;
 printf("Digite o estado:\n");
@@ -39,7 +39,7 @@ printf("Digite o código:\n");
 scanf("%s", codigo);
 
 printf("Digite o nome da cidade:\n");
-scanf("%s", nomedacidade);
+scanf(" %20[^\n]", nomedacidade);
 
 printf("Digite a população:\n");
 scanf("%d", &populacao);
@@ -62,6 +62,8 @@ printf("População: %d\n", populacao);
 printf("Área: %f km²\n", area);
 printf("Pib: %f\n", pib);
 printf("Pontos turísticos: %d\n", pontosturisticos);
+
+
 
 
 }
