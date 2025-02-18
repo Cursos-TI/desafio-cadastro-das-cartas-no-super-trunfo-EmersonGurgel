@@ -32,7 +32,7 @@ int pontosturisticos;
 
 //titulo de apresentação;
 printf("                                                     Bem vindo ao Desafio Super Trunfo.\n\n\n");
-printf("                                                                CARTA A01\n\n");
+printf("Digite as informações da Carta A01.\n\n");
 
 // dizendo ao usuario as informações que serão coletadas e coletando elas;
 printf("Digite o estado:\n");
@@ -82,8 +82,8 @@ float piba02;
 int pontosturisticosa02;
 
 //introdução de titúlo da carta A02;
-printf("Carta A02\n\n");
-printf("Nos campos abaixo informe as informações da carta A02.\n\n");
+printf("Digite as informações da Carta A02.\n\n");
+
 
 // dizendo ao usuario as informações que serão coletadas e coletando elas
 printf("Digite o estado:\n");
@@ -120,7 +120,7 @@ printf("Pontos turísticos: %d\n", pontosturisticosa02);
 printf("\n\n");
 
 //TÍTULO DA CARTA BO1
-printf("Carta B01\n\n");
+printf("Digite as informações da Carta B01.\n\n");
 
 // INÍCIO DO ESTADO B;
 //INÍCIO DA CARTA B01
@@ -175,9 +175,50 @@ printf("\n\n\n");
 // FOI USADO "B02" AO FINAL DO NOME DA VARÍAVEL PARA FACILITAR A IDENTIFICAÇÃO;
 // EX: ESTADO+b02;
 
+char estadob02;
+char codigob02[20];
+char nomedacidadeb02[20];
+int populacaob02;
+float areab02;
+float pibb02;
+int pontosturisticosb02;
 
+// SERÁ FEITA A SOLICITACÃO E A COLETA DOS DADOS DAS CARTAS AO USUÁRIO;
+printf("digite as informações da Carta B02.\n\n");
+// dizendo ao usuario as informações que serão coletadas e coletando elas;
+printf("Digite o estado:\n");
+scanf(" %c", &estadob02);
 
+printf("Digite o código:\n");
+scanf(" %s", codigob02);
 
+printf("Digite o nome da cidade:\n");
+scanf(" %20[^\n]", nomedacidadeb02);
 
+printf("Digite a população:\n");
+scanf("%d", &populacaob02);
+
+printf("Digite a área:\n");
+scanf("%f", &areab02);
+
+printf("Digite o pib:\n");
+scanf("%f", &pibb02);
+
+printf("Digite o número de pontos turísticos:\n");
+scanf("%d", &pontosturisticosb02);
+printf("\n\n");
+
+//Nessa parte abaixo será imprimido os dados que foram coletados do usuario;
+printf("Dados da carta B02:\n");
+printf("Estado: %c\n", estadob02);
+printf("Código da cidade: %s\n", codigob02);
+printf("Nome da cidade: %s\n", nomedacidadeb02);
+printf("População: %d\n", populacaob02);
+printf("Área: %f km²\n", areab02);
+printf("Pib: %f\n", pibb02);
+printf("Pontos turísticos: %d\n", pontosturisticosb02);
+printf("\n\n");
+
+return 0 ;
 
 }
