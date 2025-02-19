@@ -53,7 +53,7 @@ scanf("%f", &area);
 printf("Digite o PIB:\n");
 scanf("%f", &pib);
 
-printf("Digite o número de Pontos Turísticos:\n");
+printf("Digite o Número de Pontos Turísticos:\n");
 scanf("%d", &pontosturisticos);
 printf("\n\n");
 
@@ -219,6 +219,7 @@ printf("PIB: %f bilhões de reais\n", pibb02);
 printf("Pontos Turísticos: %d\n", pontosturisticosb02);
 printf("\n\n");
 
+//Fim do programa;
 return 0 ;
 
 }
