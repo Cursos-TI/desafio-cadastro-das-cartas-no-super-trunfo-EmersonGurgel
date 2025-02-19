@@ -35,37 +35,37 @@ printf("                                                     Bem vindo ao Desafi
 printf("Digite as informações da Carta A01.\n\n");
 
 // dizendo ao usuario as informações que serão coletadas e coletando elas;
-printf("Digite o estado:\n");
+printf("Digite o Estado:\n");
 scanf(" %c", &estado);
 
-printf("Digite o código:\n");
+printf("Digite o Código da Cidade:\n");
 scanf(" %s", codigo);
 
-printf("Digite o nome da cidade:\n");
+printf("Digite o nome da Cidade:\n");
 scanf(" %20[^\n]", nomedacidade);
 
 printf("Digite a população:\n");
 scanf("%d", &populacao);
 
-printf("Digite a área:\n");
+printf("Digite a Área:\n");
 scanf("%f", &area);
 
-printf("Digite o pib:\n");
+printf("Digite o PIB:\n");
 scanf("%f", &pib);
 
-printf("Digite o número de pontos turísticos:\n");
+printf("Digite o número de Pontos Turísticos:\n");
 scanf("%d", &pontosturisticos);
 printf("\n\n");
 
 //Nessa parte abaixo será imprimido os dados que foram coletados do usuario;
-printf("Dados da carta A01:\n");
+printf("Dados da Carta A01:\n");
 printf("Estado: %c\n", estado);
-printf("Código da cidade: %s\n", codigo);
-printf("Nome da cidade: %s\n", nomedacidade);
+printf("Código da Cidade: %s\n", codigo);
+printf("Nome da Cidade: %s\n", nomedacidade);
 printf("População: %d\n", populacao);
 printf("Área: %f km²\n", area);
-printf("Pib: %f\n", pib);
-printf("Pontos turísticos: %d\n", pontosturisticos);
+printf("PIB: %f bilhões de reais\n", pib);
+printf("Pontos Turísticos: %d\n", pontosturisticos);
 printf("\n\n");
 
 //inicio da carta A02 (estado A);
@@ -86,37 +86,37 @@ printf("Digite as informações da Carta A02.\n\n");
 
 
 // dizendo ao usuario as informações que serão coletadas e coletando elas
-printf("Digite o estado:\n");
+printf("Digite o Estado:\n");
 scanf(" %c", &estadoa02);
 
-printf("Digite o código da cidade:\n");
+printf("Digite o Código da Cidade:\n");
 scanf(" %s", codigoa02);
 
-printf("Digite o nome da cidade:\n");
+printf("Digite o nome da Cidade:\n");
 scanf(" %20[^\n]", nomedacidadea02);
 
 printf("Digite a população:\n");
 scanf("%d", &populacaoa02);
 
-printf("Digite área:\n");
+printf("Digite a Área:\n");
 scanf("%f", &areaa02);
 
-printf("Digite o pib\n");
+printf("Digite o PIB:\n");
 scanf("%f", &piba02);
 
-printf("Digite o número de pontos turísticos:\n");
+printf("Digite o número de Pontos Turísticos:\n");
 scanf("%d", &pontosturisticosa02);
 printf("\n\n\n");
 
 //Nessa parte abaixo será imprimido os dados que foram coletados do usuario;
-printf("Dados da carta A02:\n");
+printf("Dados da Carta A02:\n");
 printf("Estado: %c\n", estadoa02);
-printf("Código da cidade: %s\n", codigoa02);
-printf("Nome da cidade: %s\n", nomedacidadea02);
+printf("Código da Cidade: %s\n", codigoa02);
+printf("Nome da Cidade: %s\n", nomedacidadea02);
 printf("População: %d\n", populacaoa02);
 printf("Área: %f km²\n", areaa02);
-printf("Pib: %f\n", piba02);
-printf("Pontos turísticos: %d\n", pontosturisticosa02);
+printf("PIB: %f bilhões de reais\n", piba02);
+printf("Pontos Turísticos: %d\n", pontosturisticosa02);
 printf("\n\n");
 
 //TÍTULO DA CARTA BO1
@@ -137,37 +137,37 @@ float pibb01;
 int pontosturisticosb01;
 
 // SERÁ FEITA A SOLICITACÃO E A COLETA DOS DADOS DAS CARTAS AO USUÁRIO;
-printf("Digite o estado:\n");
+printf("Digite o Estado:\n");
 scanf(" %c", &estadob01);
 
-printf("Digite o código:\n");
+printf("Digite o Código da Cidade:\n");
 scanf(" %s", codigob01);
 
-printf("Digite o nome da cidade:\n");
+printf("Digite o nome da Cidade:\n");
 scanf(" %20[^\n]", nomedacidadeb01);
 
 printf("Digite a população:\n");
 scanf("%d", &populacaob01);
 
-printf("Digite a área:\n");
+printf("Digite a Área:\n");
 scanf("%f", &areab01);
 
-printf("Digite o pib:\n");
+printf("Digite o PIB:\n");
 scanf("%f", &pibb01);
 
-printf("Digite o número de pontos turísticos:\n");
+printf("Digite o número de Pontos Turísticos:\n");
 scanf("%d", &pontosturisticosb01);
 printf("\n\n");
 
 //Nessa parte abaixo será imprimido os dados que foram coletados do usuario;
-printf("Dados da carta B01:\n");
+printf("Dados da Carta B01:\n");
 printf("Estado: %c\n", estadob01);
-printf("Código da cidade: %s\n", codigob01);
-printf("Nome da cidade: %s\n", nomedacidadeb01);
+printf("Código da Cidade: %s\n", codigob01);
+printf("Nome da Cidade: %s\n", nomedacidadeb01);
 printf("População: %d\n", populacaob01);
 printf("Área: %f km²\n", areab01);
-printf("Pib: %f\n", pibb01);
-printf("Pontos turísticos: %d\n", pontosturisticosb01);
+printf("PIB: %f bilhões de reais\n", pibb01);
+printf("Pontos Turísticos: %d\n", pontosturisticosb01);
 printf("\n\n\n");
 
 //INICIO DA CARTA B02 (PERTENCE AO ESTADO B);
@@ -186,37 +186,37 @@ int pontosturisticosb02;
 // SERÁ FEITA A SOLICITACÃO E A COLETA DOS DADOS DAS CARTAS AO USUÁRIO;
 printf("digite as informações da Carta B02.\n\n");
 // dizendo ao usuario as informações que serão coletadas e coletando elas;
-printf("Digite o estado:\n");
+printf("Digite o Estado:\n");
 scanf(" %c", &estadob02);
 
-printf("Digite o código:\n");
+printf("Digite o Código:\n");
 scanf(" %s", codigob02);
 
-printf("Digite o nome da cidade:\n");
+printf("Digite o nome da Cidade:\n");
 scanf(" %20[^\n]", nomedacidadeb02);
 
 printf("Digite a população:\n");
 scanf("%d", &populacaob02);
 
-printf("Digite a área:\n");
+printf("Digite a Área:\n");
 scanf("%f", &areab02);
 
-printf("Digite o pib:\n");
+printf("Digite o PIB:\n");
 scanf("%f", &pibb02);
 
-printf("Digite o número de pontos turísticos:\n");
+printf("Digite o número de Pontos Turísticos:\n");
 scanf("%d", &pontosturisticosb02);
 printf("\n\n");
 
 //Nessa parte abaixo será imprimido os dados que foram coletados do usuario;
-printf("Dados da carta B02:\n");
+printf("Dados da Carta B02:\n");
 printf("Estado: %c\n", estadob02);
-printf("Código da cidade: %s\n", codigob02);
-printf("Nome da cidade: %s\n", nomedacidadeb02);
+printf("Código da Cidade: %s\n", codigob02);
+printf("Nome da Cidade: %s\n", nomedacidadeb02);
 printf("População: %d\n", populacaob02);
 printf("Área: %f km²\n", areab02);
-printf("Pib: %f\n", pibb02);
-printf("Pontos turísticos: %d\n", pontosturisticosb02);
+printf("PIB: %f bilhões de reais\n", pibb02);
+printf("Pontos Turísticos: %d\n", pontosturisticosb02);
 printf("\n\n");
 
 return 0 ;
