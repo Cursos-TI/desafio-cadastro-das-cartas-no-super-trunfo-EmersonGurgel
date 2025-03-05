@@ -157,6 +157,23 @@ printf("PIB per Capita: %f Reais\n", pibpercapitaa02);
 printf("Super Poder: %.2f", superPodera02);
 printf("\n\n");
 
+// SERÁ FEITO O SISTEMA DE COMAPARAÇÃO DAS CARTAS;
+// EXCLUSIVO APENAS NAS CARTAS A01 A02;
+
+printf("COMPARAÇÃO DAS CARTAS:\n\n");
+
+int resultadoPopulacao;
+int resultadoArea;
+int resultadoPib;
+int resultadoPontosTuristicos;
+int resultadoDensidadePopulacional;
+int resultadoPibPerCapita;
+int resultadoSuperPoder;
+
+resultadoPopulacao = populacao > populacaoa02;
+printf("Carta 1: %d\n\n", resultadoPopulacao);
+
+
 
 
 //TÍTULO DA CARTA BO1
