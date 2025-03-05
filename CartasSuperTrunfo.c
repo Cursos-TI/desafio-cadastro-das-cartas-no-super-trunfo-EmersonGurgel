@@ -25,12 +25,13 @@ int main(){
 char estado;
 char codigo[20];
 char nomedacidade[20];
-int populacao;
+unsigned long int populacao;
 float area;
 float pib;
 int pontosturisticos;
 float densidadepopulacional;
 float pibpercapita;
+float superPoder;
 //titulo de apresentação;
 printf("                                                     Bem vindo ao Desafio Super Trunfo.\n\n\n");
 printf("Digite as informações da Carta A01.\n\n");
@@ -46,7 +47,7 @@ printf("Digite o nome da Cidade:\n");
 scanf(" %20[^\n]", nomedacidade);
 
 printf("Digite a população:\n");
-scanf("%d", &populacao);
+scanf("%lu", &populacao);
 
 printf("Digite a Área:\n");
 scanf("%f", &area);
@@ -64,19 +65,25 @@ densidadepopulacional = populacao / area;
 
 //função do calculo do PIB per capita;
 // PIB / população;
+              //conversão explicita de "int" para "float";
 pibpercapita = (float) pib / populacao;
+
+//Calculo do super poder da carta;
+            //conversão explicita de "int" para "float";
+superPoder = (float)populacao + area + pib + pontosturisticos - densidadepopulacional + pibpercapita;
 
 //Nessa parte abaixo será imprimido os dados que foram coletados do usuario;
 printf("Dados da Carta A01:\n");
 printf("Estado: %c\n", estado);
 printf("Código da Cidade: %s\n", codigo);
 printf("Nome da Cidade: %s\n", nomedacidade);
-printf("População: %d\n", populacao);
+printf("População: %lu\n", populacao);
 printf("Área: %.2f km²\n", area);
 printf("PIB: %.2f bilhões de reais\n", pib);
 printf("Pontos Turísticos: %d\n", pontosturisticos);
 printf("Densidade Populacional: %.2f hab/km²\n", densidadepopulacional);
-printf("PIB per Capita: %f Reais", pibpercapita);
+printf("PIB per Capita: %f Reais\n", pibpercapita);
+printf("Super Poder: %.2f", superPoder);
 printf("\n\n");
 
 //inicio da carta A02 (estado A);
@@ -87,12 +94,13 @@ printf("\n\n");
 char estadoa02;
 char codigoa02[20];
 char nomedacidadea02[20];
-int populacaoa02;
+unsigned long int populacaoa02;
 float areaa02;
 float piba02;
 int pontosturisticosa02;
 float densidadepopulacionala02;
 float pibpercapitaa02;
+float superPodera02;
 
 //introdução de titúlo da carta A02;
 printf("Digite as informações da Carta A02.\n\n");
@@ -109,7 +117,7 @@ printf("Digite o nome da Cidade:\n");
 scanf(" %20[^\n]", nomedacidadea02);
 
 printf("Digite a população:\n");
-scanf("%d", &populacaoa02);
+scanf("%lu", &populacaoa02);
 
 printf("Digite a Área:\n");
 scanf("%f", &areaa02);
@@ -127,20 +135,29 @@ densidadepopulacionala02 = populacaoa02 / areaa02;
 
 //função do calculo do PIB per capita;
 // PIB / população;
+                 //conversão explicita de "int" para "float";
 pibpercapitaa02 = (float) piba02 / populacaoa02;
+
+//Calculo do super poder da carta;
+            //conversão explicita de "int" para "float";
+superPodera02 = (float)populacaoa02 + areaa02 + piba02 + pontosturisticosa02 - densidadepopulacionala02 + pibpercapitaa02;
+
 
 //Nessa parte abaixo será imprimido os dados que foram coletados do usuario;
 printf("Dados da Carta A02:\n");
 printf("Estado: %c\n", estadoa02);
 printf("Código da Cidade: %s\n", codigoa02);
 printf("Nome da Cidade: %s\n", nomedacidadea02);
-printf("População: %d\n", populacaoa02);
+printf("População: %lu\n", populacaoa02);
 printf("Área: %.2f km²\n", areaa02);
 printf("PIB: %.2f bilhões de reais\n", piba02);
 printf("Pontos Turísticos: %d\n", pontosturisticosa02);
 printf("Densidade Populacional: %.2f hab/km²\n", densidadepopulacionala02);
-printf("PIB per Capita: %f Reais", pibpercapitaa02);
+printf("PIB per Capita: %f Reais\n", pibpercapitaa02);
+printf("Super Poder: %.2f", superPodera02);
 printf("\n\n");
+
+
 
 //TÍTULO DA CARTA BO1
 printf("Digite as informações da Carta B01.\n\n");
@@ -154,12 +171,13 @@ printf("Digite as informações da Carta B01.\n\n");
 char estadob01;
 char codigob01[20];
 char nomedacidadeb01[20];
-int populacaob01;
+unsigned long int populacaob01;
 float areab01;
 float pibb01;
 int pontosturisticosb01;
 float densidadepopulacionalb01;
 float pibpercapitab01;
+float superPoderb01;
 
 // SERÁ FEITA A SOLICITACÃO E A COLETA DOS DADOS DAS CARTAS AO USUÁRIO;
 printf("Digite o Estado:\n");
@@ -172,7 +190,7 @@ printf("Digite o nome da Cidade:\n");
 scanf(" %20[^\n]", nomedacidadeb01);
 
 printf("Digite a população:\n");
-scanf("%d", &populacaob01);
+scanf("%lu", &populacaob01);
 
 printf("Digite a Área:\n");
 scanf("%f", &areab01);
@@ -192,17 +210,22 @@ densidadepopulacionalb01 = populacao / area;
 // PIB / população;
 pibpercapitab01 = (float) pib / populacao;
 
+//Calculo do super poder da carta;
+            //conversão explicita de "int" para "float";
+superPoderb01 = (float)populacaob01 + areab01 + pibb01 + pontosturisticosb01 - densidadepopulacionalb01 + pibpercapitab01;
+
 //Nessa parte abaixo será imprimido os dados que foram coletados do usuario;
 printf("Dados da Carta B01:\n");
 printf("Estado: %c\n", estadob01);
 printf("Código da Cidade: %s\n", codigob01);
 printf("Nome da Cidade: %s\n", nomedacidadeb01);
-printf("População: %d\n", populacaob01);
+printf("População: %lu\n", populacaob01);
 printf("Área: %.2f km²\n", areab01);
 printf("PIB: %.2f bilhões de reais\n", pibb01);
 printf("Pontos Turísticos: %d\n", pontosturisticosb01);
 printf("Densidade Populacional: %.2f hab/km²\n", densidadepopulacionalb01);
-printf("PIB per Capita: %f Reais", pibpercapitab01);
+printf("PIB per Capita: %f Reais\n", pibpercapitab01);
+printf("Super Poder: %.2f", superPoderb01);
 printf("\n\n\n");
 
 //INICIO DA CARTA B02 (PERTENCE AO ESTADO B);
@@ -213,12 +236,13 @@ printf("\n\n\n");
 char estadob02;
 char codigob02[20];
 char nomedacidadeb02[20];
-int populacaob02;
+unsigned long int populacaob02;
 float areab02;
 float pibb02;
 int pontosturisticosb02;
 float densidadepopulacionalb02;
 float pibpercapitab02;
+float superPoderb02;
 
 // SERÁ FEITA A SOLICITACÃO E A COLETA DOS DADOS DAS CARTAS AO USUÁRIO;
 printf("digite as informações da Carta B02.\n\n");
@@ -233,7 +257,7 @@ printf("Digite o nome da Cidade:\n");
 scanf(" %20[^\n]", nomedacidadeb02);
 
 printf("Digite a população:\n");
-scanf("%d", &populacaob02);
+scanf("%lu", &populacaob02);
 
 printf("Digite a Área:\n");
 scanf("%f", &areab02);
@@ -253,17 +277,21 @@ densidadepopulacionalb02 = populacaob02 / areab02;
 // PIB / população;
 pibpercapitab02 = (float) pibb02 / populacaob02;
 
+//Calculo do super poder da carta;
+            //conversão explicita de "int" para "float";
+superPoderb02 = (float)populacaob02 + areab02 + pibb01 + pontosturisticosb02 - densidadepopulacionalb02 + pibpercapitab02;
 //Nessa parte abaixo será imprimido os dados que foram coletados do usuario;
 printf("Dados da Carta B02:\n");
 printf("Estado: %c\n", estadob02);
 printf("Código da Cidade: %s\n", codigob02);
 printf("Nome da Cidade: %s\n", nomedacidadeb02);
-printf("População: %d\n", populacaob02);
+printf("População: %lu\n", populacaob02);
 printf("Área: %.2f km²\n", areab02);
 printf("PIB: %.2f bilhões de reais\n", pibb02);
 printf("Pontos Turísticos: %d\n", pontosturisticosb02);
 printf("Densidade Populacional: %.2f hab/km²\n", densidadepopulacionalb02);
-printf("PIB per Capita: %f Reais", pibpercapitab02);
+printf("PIB per Capita: %f Reais\n", pibpercapitab02);
+printf("Super Poder: %.2f", superPoderb02);
 printf("\n\n");
 
 //Fim do programa;
