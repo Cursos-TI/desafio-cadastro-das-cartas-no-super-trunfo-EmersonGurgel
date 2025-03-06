@@ -171,8 +171,25 @@ int resultadoPibPerCapita;
 int resultadoSuperPoder;
 
 resultadoPopulacao = populacao > populacaoa02;
-printf("Carta 1: %d\n\n", resultadoPopulacao);
+printf("População (Carta 1): %d\n", resultadoPopulacao);
 
+resultadoArea = area > areaa02;
+printf("Área (Carta 1): %d\n", resultadoArea);
+
+resultadoPib = pib > piba02;
+printf("PIB (Carta 1): %d\n", resultadoPib);
+
+resultadoPontosTuristicos = pontosturisticos > pontosturisticosa02;
+printf("Pontos Turisticos (Carta 1): %d\n", resultadoPontosTuristicos);
+
+resultadoDensidadePopulacional = densidadepopulacional < densidadepopulacionala02;
+printf("Densidade Populacional (Carta 2): %d\n", resultadoDensidadePopulacional);
+
+resultadoPibPerCapita = pibpercapita > pibpercapitaa02;
+printf("PIB per Capita (Carta 1): %d\n", resultadoPibPerCapita);
+
+resultadoSuperPoder = superPoder > superPodera02;
+printf("Super Poder (Carta 1): %d\n\n", resultadoSuperPoder);
 
 
 
