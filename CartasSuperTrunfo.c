@@ -22,6 +22,7 @@ int main(){
 // Definição de variáveis do (estado-carta A01);
 // A PARTIR DA CARTA A02 FOI USADO (VARIAVEL+ IDENTIFICAÇÃO DA CARTA);
 // EX: "ESTADO+a02), ESTADO+A02, ESTADO+B01, ESTADO+B02...;
+
 char estado;
 char codigo[20];
 char nomedacidade[20];
@@ -91,6 +92,7 @@ printf("\n\n");
 // Variaveis da carta A02 (estado A);
 //foi adicionado "a02" a frente das variaveis para facilitar a identificacão;
 //EX: ESTADO+a02;
+
 char estadoa02;
 char codigoa02[20];
 char nomedacidadea02[20];
@@ -157,10 +159,36 @@ printf("PIB per Capita: %f Reais\n", pibpercapitaa02);
 printf("Super Poder: %.2f", superPodera02);
 printf("\n\n");
 
-// SERÁ FEITO O SISTEMA DE COMAPARAÇÃO DAS CARTAS;
-// EXCLUSIVO APENAS NAS CARTAS A01 A02;
+printf("COMPARAÇÃO DAS CARTAS A01 E A02\n\n");
+ 
+      printf("Comparação das Cartas(Atributo: População):\n\n");
+      
+    printf("Carta 1 - %s: %lu\n", nomedacidade, populacao);
+    printf("Carta 2 - %s: %lu\n", nomedacidadea02, populacaoa02);
+ 
+    if (populacao > populacaoa02) {
+  printf("Resultado: Carta 1 (%s) Venceu!\n\n", nomedacidade);
+} else { printf("Resultado: Carta 2 (%s) Venceu!\n\n", nomedacidadea02);}
 
-printf("COMPARAÇÃO DAS CARTAS:\n\n");
+      printf("Comparação das Cartas(Atributo: Área):\n\n");
+
+      printf("Carta 1 - %s: %.2f\n\n", nomedacidade, area);
+      printf("Carta 2 - %s: %.2f\n\n", nomedacidadea02, areaa02);
+      
+      if (area > areaa02) {
+        printf("Resultado: carta 1 (%s) Venceu!\n\n", nomedacidade);
+      } else {printf("Resultado: carta 2 (%s) Venceu!\n\n", nomedacidadea02);}
+      
+
+
+
+/*ESTE TRECHO DO CODIGO NÃO ESTÁ SENDO USADO
+ANTIGA FUNÇÃO DE COMPARAÇÃO DAS CARTAS A01 E A02
+   
+   SERÁ FEITO O SISTEMA DE COMPARAÇÃO DAS CARTAS
+   EXCLUSIVO APENAS NAS CARTAS A01 A02
+
+ printf("COMPARAÇÃO DAS CARTAS:\n\n");
 
 int resultadoPopulacao;
 int resultadoArea;
@@ -169,6 +197,7 @@ int resultadoPontosTuristicos;
 int resultadoDensidadePopulacional;
 int resultadoPibPerCapita;
 int resultadoSuperPoder;
+
 
 resultadoPopulacao = populacao > populacaoa02;
 printf("População (Carta 1): %d\n", resultadoPopulacao);
@@ -189,7 +218,7 @@ resultadoPibPerCapita = pibpercapita > pibpercapitaa02;
 printf("PIB per Capita (Carta 1): %d\n", resultadoPibPerCapita);
 
 resultadoSuperPoder = superPoder > superPodera02;
-printf("Super Poder (Carta 1): %d\n\n", resultadoSuperPoder);
+printf("Super Poder (Carta 1): %d\n\n", resultadoSuperPoder); */
 
 
 
