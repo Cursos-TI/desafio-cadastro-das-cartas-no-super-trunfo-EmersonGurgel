@@ -172,16 +172,34 @@ printf("COMPARAÇÃO DAS CARTAS A01 E A02\n\n");
 
       printf("Comparação das Cartas(Atributo: Área):\n\n");
 
-      printf("Carta 1 - %s: %.2f\n\n", nomedacidade, area);
-      printf("Carta 2 - %s: %.2f\n\n", nomedacidadea02, areaa02);
+      printf("Carta 1 - %s: %.2f\n", nomedacidade, area);
+      printf("Carta 2 - %s: %.2f\n", nomedacidadea02, areaa02);
       
       if (area > areaa02) {
         printf("Resultado: carta 1 (%s) Venceu!\n\n", nomedacidade);
       } else {printf("Resultado: carta 2 (%s) Venceu!\n\n", nomedacidadea02);}
       
+      printf("Comparação das Cartas(Atributo: PIB):\n\n");
 
+      printf(" Carta 1 - %s: %.2f\n", nomedacidade, nomedacidade);
+      printf(" Carta 2 - %s: %.2f\n", nomedacidadea02, nomedacidadea02);
 
+      if (pib > piba02) {
+        prinf("Resultado: Carta 1 (%s) Venceu!\n\n", nomedacidade);
+      } else { printf("Resultado: Carta 2 (%s) Venceu!\n\n", nomedacidadea02);}
 
+      printf("Comparação das Cartas(Atributo: Pontos Turisticos):\n\n");
+
+      printf(" Carta 1 - %s: %d\n", nomedacidade, pontosturisticos);
+      printf(" Carta 2 - %s: %d\n", nomedacidadea02, pontosturisticosa02);
+      
+      if (pontosturisticos > pontosturisticosa02) {
+        printf("Resultado: Carta 1 (%s) Venceu!\n\n", nomedacidade);
+      } else {printf("Resultado: Carta 2 (%s) Venceu!\n\n", nomedacidadea02);}
+
+      printf("Comparação das Cartas(Atributo: Densidade Populacional):\n\n");
+       
+      printf("")
 /*ESTE TRECHO DO CODIGO NÃO ESTÁ SENDO USADO
 ANTIGA FUNÇÃO DE COMPARAÇÃO DAS CARTAS A01 E A02
    
