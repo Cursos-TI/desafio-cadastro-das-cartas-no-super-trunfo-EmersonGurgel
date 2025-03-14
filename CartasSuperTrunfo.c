@@ -176,8 +176,8 @@ printf("COMPARAÇÃO DAS CARTAS A01 E A02\n\n");
       printf("Carta 2 - %s: %.2f\n", nomedacidadea02, areaa02);
       
       if (area > areaa02) {
-        printf("Resultado: carta 1 (%s) Venceu!\n\n", nomedacidade);
-      } else {printf("Resultado: carta 2 (%s) Venceu!\n\n", nomedacidadea02);}
+        printf("Resultado: Carta 1 (%s) Venceu!\n\n", nomedacidade);
+      } else {printf("Resultado: Carta 2 (%s) Venceu!\n\n", nomedacidadea02);}
       
       printf("Comparação das Cartas(Atributo: PIB):\n\n");
 
