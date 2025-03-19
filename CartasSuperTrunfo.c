@@ -1,5 +1,6 @@
 #include <stdio.h>
-
+#include <stdlib.h>
+#include <time.h>
 // Desafio Super Trunfo - Países
 // Tema 1 - Cadastro das Cartas
 // Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
@@ -159,9 +160,77 @@ printf("PIB per Capita: %f Reais\n", pibpercapitaa02);
 printf("Super Poder: %.2f", superPodera02);
 printf("\n\n");
 
-printf("COMPARAÇÃO DAS CARTAS A01 E A02\n\n");
- 
-      printf("Comparação das Cartas(Atributo: População):\n\n");
+printf(" ESCOLHA DO ATRIBUTO PARA COMPARAÇÃO DAS CARTAS A01 E A02\n\n");
+int opcao;
+printf("Escolha uma opção:\n");
+printf("1. População\n");
+printf("2. Área\n");
+printf("3. PIB\n");
+printf("4. Pontos Turisticos\n");
+printf("5. Densidade Populacional\n\n");
+scanf("%d", &opcao);
+
+
+switch (opcao)
+{
+case 1:
+ printf("O atributo escolhido foi (População)\n");
+  break;
+case 2:
+printf("O atributo escolhido foi (Área)\n");
+break;
+case 3:
+printf("O atributo escolhido foi (PIB)\n");
+break;
+case 4:
+printf("O atributo escolhido foi (Pontos Turisticos)\n");
+break;
+case 5:
+printf("O atributo escolhido foi (Densidade populacional)\n");
+default:
+printf("O atributo escolhido foi (opção inválida)\n");
+  break;
+}
+
+if (opcao == 1)
+{
+  if (populacao > populacaoa02)
+  {
+    printf("Carta 1 - (%s): %lu\n", nomedacidade, populacao);
+    printf("Carta 2 - (%s): %lu\n", nomedacidadea02, populacaoa02);
+    printf("Carta 1 (%s) Venceu!\n", nomedacidade);
+  } else if (populacao < populacaoa02){
+    printf("Carta 1 - (%s): %lu\n", nomedacidade, populacao);
+    printf("Carta 2 - (%s): %lu\n", nomedacidadea02, populacaoa02);
+    printf("Carta 2 (%s) Venceu!)", nomedacidadea02);
+  } else {
+    printf("Carta 1 - (%s): %lu\n", nomedacidade, populacao);
+    printf("Carta 2 - (%s): %lu\n", nomedacidadea02, populacaoa02);
+    printf("Houve um empate!");
+  }
+}
+if (opcao == 2)
+{
+  if (area > areaa02)
+  {
+    printf("Carta 1 - (%s): %2.f\n", nomedacidade, area);
+    printf("Carta 2 - (%s): %2.f\n", nomedacidadea02, areaa02);
+    printf("Carta 1 (%s) Venceu!\n\n", nomedacidade);
+  } else if (area < areaa02) {
+    printf("Carta 1 - (%s): %2.f\n", nomedacidade, area);
+    printf("Carta 2 - (%s): %2.f\n", nomedacidadea02, areaa02);
+    printf("Carta 2 (%s) Venceu!\n\n", nomedacidadea02);
+  } else {
+    printf("Houve um empate!\n");
+  }
+}
+  
+
+
+  
+
+
+    /*  printf("Comparação das Cartas(Atributo: População):\n\n");
       
     printf("Carta 1 - %s: %lu\n", nomedacidade, populacao);
     printf("Carta 2 - %s: %lu\n", nomedacidadea02, populacaoa02);
@@ -223,6 +292,8 @@ printf("COMPARAÇÃO DAS CARTAS A01 E A02\n\n");
       if (superPoder > superPodera02) {
         printf("Resultado: Carta 1 (%s) Venceu!\n\n", nomedacidade);
       } else {printf("Resultado: Carta 2 (%s) venceu\n\n", nomedacidadea02);}
+
+      */
 
 /* ESTE TRECHO DO CODIGO NÃO ESTÁ SENDO USADO
    ESTE TRECHO DO CODIGO NÃO ESTÁ SENDO USADO
