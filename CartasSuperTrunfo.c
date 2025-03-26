@@ -161,11 +161,16 @@ printf("Super Poder: %.2f", superPodera02);
 printf("\n\n");
 
 
+//sistema de menus para o usuário escolher os atributos que serão comparados;
+//variáveis para armazenar os resultados da comparação (resultado1 e resultado2) e das escolhas de atributos que serão comparados (primeiroAtributo e segundoAtributo);
 
 
 printf(" ESCOLHA DO ATRIBUTO PARA COMPARAÇÃO DAS CARTAS A01 E A02\n\n");
 int resultado1, resultado2;
 int primeiroAtributo, segundoAtributo;
+
+//menu 1;
+//só será usado esses 5 atributos para o sistema de comparação (igual ao desafio anterior);
 
 printf("Faça duas escolhas de atributos das cartas (AO1 e A02) para serem comparadas!\n\n");
 printf("Escolha uma opção:\n");
@@ -175,6 +180,8 @@ printf("3. PIB\n");
 printf("4. Pontos Turisticos\n");
 printf("5. Densidade Populacional\n\n");
 scanf("%d", &primeiroAtributo);
+
+//sistema de menu da primeira escolha;
 
 switch (primeiroAtributo) {
   case 1:
@@ -201,6 +208,9 @@ switch (primeiroAtributo) {
   printf("Opção inválida!\n");
   break;
 }
+
+//menu 2
+
 printf("Escolha o segundo atributo (Diferente do primeiro atributo!)\n\n");
 printf("Escolha uma opção:\n");
 printf("1. População\n");
@@ -209,6 +219,8 @@ printf("3. PIB\n");
 printf("4. Pontos Turisticos\n");
 printf("5. Densidade Populacional\n\n");
 scanf("%d", &segundoAtributo);
+
+//sistema de menu da segunda escolha;
 
 if (segundoAtributo == primeiroAtributo)
 {
@@ -242,6 +254,13 @@ if (segundoAtributo == primeiroAtributo)
   }
   
 }
+
+//sistema que identifica qual escolha foi feita para aprensentar as informações corretas do atributo e comparação solitado pelo usuário;
+//if((primeiroAtributo == 1)) quer dizer que o usuario selecionou a primeira opção como "1" e "&&" para verificar se ambos são verdadeiros e if((segundoAtributo == 2)) quer dizer que o usuario escolheu a opção 2;
+//se "&&" estiver correto vai ser exibido o texto que a carta 1 é a vencedora;
+// "!=" se ambos fizerem um ponto será exibido empate;
+// caso nao dê nenhuma dessas opções será considerado vitória da carta 2;
+
 if((primeiroAtributo == 1) && (segundoAtributo == 2)) {
 
 if(resultado1 && resultado2) {
@@ -432,9 +451,243 @@ if ( (primeiroAtributo == 3) && (segundoAtributo == 1) ){
   printf("Carta 2 - (%s) Venceu!\n\n", nomedacidadea02);
 }
 }
+if ( (primeiroAtributo == 3) && (segundoAtributo == 2) ){
+  if(resultado1 && resultado2) {
+    printf("Carta 1 - (Área) (%s): %.2f\n", nomedacidade, area);
+    printf("Carta 2 - (Área) (%s): %.2f\n", nomedacidadea02, areaa02);
+    printf("Carta 1 - (PIB) (%s): %.2f\n", nomedacidade, pib);
+    printf("Carta 2 - (PIB) (%s): %.2f\n", nomedacidadea02, piba02);
+    printf("Carta 1 - (%s) Venceu!\n\n", nomedacidade);
+ } else if (resultado1 != resultado2) {
+  printf("Carta 1 - (Área) (%s): %.2f\n", nomedacidade, area);
+  printf("Carta 2 - (Área) (%s): %.2f\n", nomedacidadea02, areaa02);
+  printf("Carta 1 - (PIB) (%s): %.2f\n", nomedacidade, pib);
+  printf("Carta 2 - (PIB) (%s): %.2f\n", nomedacidadea02, piba02);
+  printf("Você empatou!\n\n");
+ } else {
+  printf("Carta 1 - (Área) (%s): %.2f\n", nomedacidade, area);
+  printf("Carta 2 - (Área) (%s): %.2f\n", nomedacidadea02, areaa02);
+  printf("Carta 1 - (PIB) (%s): %.2f\n", nomedacidade, pib);
+  printf("Carta 2 - (PIB) (%s): %.2f\n", nomedacidadea02, piba02);
+  printf("Carta 2 - (%s) Venceu!\n\n", nomedacidadea02);
+ }
+}
+if ( (primeiroAtributo == 3) && (segundoAtributo == 4) ){
+  if(resultado1 && resultado2) {
+  printf("Carta 1 - (PIB) (%s): %.2f\n", nomedacidade, pib);
+  printf("Carta 2 - (PIB) (%s): %.2f\n", nomedacidadea02, piba02);
+  printf("Carta 1 - (Pontos Turisticos) (%s): %d\n", nomedacidade, pontosturisticos);
+  printf("Carta 2 - (Pontos turisticos) (%s): %d\n", nomedacidadea02, pontosturisticosa02);
+  printf("Carta 1 - (%s) Venceu!\n\n", nomedacidade);
+} else if (resultado1 != resultado2) {
+  printf("Carta 1 - (PIB) (%s): %.2f\n", nomedacidade, pib);
+  printf("Carta 2 - (PIB) (%s): %.2f\n", nomedacidadea02, piba02);
+  printf("Carta 1 - (Pontos Turisticos) (%s): %d\n", nomedacidade, pontosturisticos);
+  printf("Carta 2 - (Pontos turisticos) (%s): %d\n", nomedacidadea02, pontosturisticosa02);
+  printf("Você empatou!\n\n");
+} else {
+  printf("Carta 1 - (PIB) (%s): %.2f\n", nomedacidade, pib);
+  printf("Carta 2 - (PIB) (%s): %.2f\n", nomedacidadea02, piba02);
+  printf("Carta 1 - (Pontos Turisticos) (%s): %d\n", nomedacidade, pontosturisticos);
+  printf("Carta 2 - (Pontos turisticos) (%s): %d\n", nomedacidadea02, pontosturisticosa02);
+  printf("Carta 2 - (%s) Venceu!\n\n", nomedacidadea02);
+}
+}
+if ( (primeiroAtributo == 3) && (segundoAtributo == 5) ){
+  if(resultado1 && resultado2) {
+  printf("Carta 1 - (PIB) (%s): %.2f\n", nomedacidade, pib);
+  printf("Carta 2 - (PIB) (%s): %.2f\n", nomedacidadea02, piba02);
+  printf("Carta 1 - (Densidade Populacional) (%s): %.2f\n", nomedacidade, densidadepopulacional);
+  printf("Carta 2 - (Densidade Populacional) (%s): %.2f\n", nomedacidadea02,densidadepopulacionala02);
+  printf("Carta 1 - (%s) Venceu!\n\n", nomedacidade);
+} else if (resultado1 != resultado2) {
+  printf("Carta 1 - (PIB) (%s): %.2f\n", nomedacidade, pib);
+  printf("Carta 2 - (PIB) (%s): %.2f\n", nomedacidadea02, piba02);
+  printf("Carta 1 - (Densidade Populacional) (%s): %.2f\n", nomedacidade, densidadepopulacional);
+  printf("Carta 2 - (Densidade Populacional) (%s): %.2f\n", nomedacidadea02,densidadepopulacionala02);
+  printf("Você empatou!\n\n");
+} else {
+  printf("Carta 1 - (PIB) (%s): %.2f\n", nomedacidade, pib);
+  printf("Carta 2 - (PIB) (%s): %.2f\n", nomedacidadea02, piba02);
+  printf("Carta 1 - (Densidade Populacional) (%s): %.2f\n", nomedacidade, densidadepopulacional);
+  printf("Carta 2 - (Densidade Populacional) (%s): %.2f\n", nomedacidadea02,densidadepopulacionala02);
+  printf("Carta 2 - (%s) Venceu!\n\n", nomedacidadea02);
+}
+}
+if ( (primeiroAtributo == 4) && (segundoAtributo == 1) ){
+  if(resultado1 && resultado2) {
+    printf("Carta 1 - (População) (%s): %lu\n", nomedacidade, populacao);
+    printf("Carta 2 - (População) (%s): %lu\n", nomedacidadea02, populacaoa02);
+    printf("Carta 1 - (Pontos Turisticos) (%s): %d\n", nomedacidade, pontosturisticos);
+    printf("Carta 2 - (Pontos turisticos) (%s): %d\n", nomedacidadea02, pontosturisticosa02);
+    printf("Carta 1 - (%s) Venceu!\n\n", nomedacidade);
+}  else if (resultado1 != resultado2) {
+  printf("Carta 1 - (População) (%s): %lu\n", nomedacidade, populacao);
+  printf("Carta 2 - (População) (%s): %lu\n", nomedacidadea02, populacaoa02);
+  printf("Carta 1 - (Pontos Turisticos) (%s): %d\n", nomedacidade, pontosturisticos);
+  printf("Carta 2 - (Pontos turisticos) (%s): %d\n", nomedacidadea02, pontosturisticosa02);
+  printf("Você empatou!\n\n");
+} else {
+  printf("Carta 1 - (População) (%s): %lu\n", nomedacidade, populacao);
+  printf("Carta 2 - (População) (%s): %lu\n", nomedacidadea02, populacaoa02);
+  printf("Carta 1 - (Pontos Turisticos) (%s): %d\n", nomedacidade, pontosturisticos);
+  printf("Carta 2 - (Pontos turisticos) (%s): %d\n", nomedacidadea02, pontosturisticosa02);
+  printf("Carta 2 - (%s) Venceu!\n\n", nomedacidadea02);
+}
+}
+if ( (primeiroAtributo == 4) && (segundoAtributo == 2) ){
+  if(resultado1 && resultado2) {
+    printf("Carta 1 - (Pontos Turisticos) (%s): %d\n", nomedacidade, pontosturisticos);
+    printf("Carta 2 - (Pontos turisticos) (%s): %d\n", nomedacidadea02, pontosturisticosa02);
+    printf("Carta 1 - (Área) (%s): %.2f\n", nomedacidade, area);
+    printf("Carta 2 - (Área) (%s): %.2f\n", nomedacidadea02, areaa02);
+    printf("Carta 1 - (%s) Venceu!\n\n", nomedacidade);
+  } else if (resultado1 != resultado2) {
+    printf("Carta 1 - (Pontos Turisticos) (%s): %d\n", nomedacidade, pontosturisticos);
+    printf("Carta 2 - (Pontos turisticos) (%s): %d\n", nomedacidadea02, pontosturisticosa02);
+    printf("Carta 1 - (Área) (%s): %.2f\n", nomedacidade, area);
+    printf("Carta 2 - (Área) (%s): %.2f\n", nomedacidadea02, areaa02);
+    printf("Você empatou!\n\n");
+  } else {
+    printf("Carta 1 - (Pontos Turisticos) (%s): %d\n", nomedacidade, pontosturisticos);
+    printf("Carta 2 - (Pontos turisticos) (%s): %d\n", nomedacidadea02, pontosturisticosa02);
+    printf("Carta 1 - (Área) (%s): %.2f\n", nomedacidade, area);
+    printf("Carta 2 - (Área) (%s): %.2f\n", nomedacidadea02, areaa02);
+    printf("Carta 2 - (%s) Venceu!\n\n", nomedacidadea02);
+  }
+}
+if ( (primeiroAtributo == 4) && (segundoAtributo == 3) ){
+  if(resultado1 && resultado2) {
+    printf("Carta 1 - (PIB) (%s): %.2f\n", nomedacidade, pib);
+    printf("Carta 2 - (PIB) (%s): %.2f\n", nomedacidadea02, piba02);
+    printf("Carta 1 - (Pontos Turisticos) (%s): %d\n", nomedacidade, pontosturisticos);
+    printf("Carta 2 - (Pontos turisticos) (%s): %d\n", nomedacidadea02, pontosturisticosa02);
+    printf("Carta 1 - (%s) Venceu!\n\n", nomedacidade);
+  }  else if (resultado1 != resultado2) {
+    printf("Carta 1 - (PIB) (%s): %.2f\n", nomedacidade, pib);
+    printf("Carta 2 - (PIB) (%s): %.2f\n", nomedacidadea02, piba02);
+    printf("Carta 1 - (Pontos Turisticos) (%s): %d\n", nomedacidade, pontosturisticos);
+    printf("Carta 2 - (Pontos turisticos) (%s): %d\n", nomedacidadea02, pontosturisticosa02);
+    printf("Você empatou!\n\n");
+  } else {
+    printf("Carta 1 - (PIB) (%s): %.2f\n", nomedacidade, pib);
+    printf("Carta 2 - (PIB) (%s): %.2f\n", nomedacidadea02, piba02);
+    printf("Carta 1 - (Pontos Turisticos) (%s): %d\n", nomedacidade, pontosturisticos);
+    printf("Carta 2 - (Pontos turisticos) (%s): %d\n", nomedacidadea02, pontosturisticosa02);
+    printf("Carta 2 - (%s) Venceu!\n\n", nomedacidadea02);
+}
+}
+if ( (primeiroAtributo == 4) && (segundoAtributo == 5) ){
+  if(resultado1 && resultado2) {
+    printf("Carta 1 - (Pontos Turisticos) (%s): %d\n", nomedacidade, pontosturisticos);
+    printf("Carta 2 - (Pontos turisticos) (%s): %d\n", nomedacidadea02, pontosturisticosa02);
+    printf("Carta 1 - (Densidade Populacional) (%s): %.2f\n", nomedacidade, densidadepopulacional);
+    printf("Carta 2 - (Densidade Populacional) (%s): %.2f\n", nomedacidadea02,densidadepopulacionala02);
+    printf("Carta 1 - (%s) Venceu!\n\n", nomedacidade);
+}  else if (resultado1 != resultado2) {
+  printf("Carta 1 - (Pontos Turisticos) (%s): %d\n", nomedacidade, pontosturisticos);
+  printf("Carta 2 - (Pontos turisticos) (%s): %d\n", nomedacidadea02, pontosturisticosa02);
+  printf("Carta 1 - (Densidade Populacional) (%s): %.2f\n", nomedacidade, densidadepopulacional);
+  printf("Carta 2 - (Densidade Populacional) (%s): %.2f\n", nomedacidadea02,densidadepopulacionala02);
+  printf("Você empatou!\n\n");
+} else {
+  printf("Carta 1 - (Pontos Turisticos) (%s): %d\n", nomedacidade, pontosturisticos);
+  printf("Carta 2 - (Pontos turisticos) (%s): %d\n", nomedacidadea02, pontosturisticosa02);
+  printf("Carta 1 - (Densidade Populacional) (%s): %.2f\n", nomedacidade, densidadepopulacional);
+  printf("Carta 2 - (Densidade Populacional) (%s): %.2f\n", nomedacidadea02,densidadepopulacionala02);
+  printf("Carta 2 - (%s) Venceu!\n\n", nomedacidadea02);
+}
+}
+if ( (primeiroAtributo == 5) && (segundoAtributo == 1) ){
+  if(resultado1 && resultado2) {
+   printf("Carta 1 - (População) (%s): %lu\n", nomedacidade, populacao);
+   printf("Carta 1 - (Densidade Populacional) (%s): %.2f\n", nomedacidade, densidadepopulacional);
+   printf("Carta 2 - (População) (%s): %lu\n", nomedacidadea02, populacaoa02);
+   printf("Carta 2 - (Densidade Populacional) (%s): %.2f\n", nomedacidadea02,densidadepopulacionala02);
+   printf("Carta 1 - (%s) Venceu!\n\n", nomedacidade);
+} else if (resultado1 != resultado2) {
+   printf("Carta 1 - (População) (%s): %lu\n", nomedacidade, populacao);
+   printf("Carta 1 - (Densidade Populacional) (%s): %.2f\n", nomedacidade, densidadepopulacional);
+   printf("Carta 2 - (População) (%s): %lu\n", nomedacidadea02, populacaoa02);
+   printf("Carta 2 - (Densidade Populacional) (%s): %.2f\n", nomedacidadea02,densidadepopulacionala02);
+   printf("Você empatou!\n\n");
+} else {
+   printf("Carta 1 - (População) (%s): %lu\n", nomedacidade, populacao);
+   printf("Carta 1 - (Densidade Populacional) (%s): %.2f\n", nomedacidade, densidadepopulacional);
+   printf("Carta 2 - (População) (%s): %lu\n", nomedacidadea02, populacaoa02);
+   printf("Carta 2 - (Densidade Populacional) (%s): %.2f\n", nomedacidadea02,densidadepopulacionala02);
+   printf("Carta 2 - (%s) Venceu!\n\n", nomedacidadea02);
+}
+} 
+if ( (primeiroAtributo == 5) && (segundoAtributo == 2) ){
+  if(resultado1 && resultado2) { 
+    printf("Carta 1 - (Área) (%s): %.2f\n", nomedacidade, area);
+    printf("Carta 2 - (Área) (%s): %.2f\n", nomedacidadea02, areaa02);
+    printf("Carta 1 - (Densidade Populacional) (%s): %.2f\n", nomedacidade, densidadepopulacional);
+    printf("Carta 2 - (Densidade Populacional) (%s): %.2f\n", nomedacidadea02,densidadepopulacionala02);
+    printf("Carta 1 - (%s) Venceu!\n\n", nomedacidade);
+    } else if (resultado1 != resultado2) {
+    printf("Carta 1 - (Área) (%s): %.2f\n", nomedacidade, area);
+    printf("Carta 2 - (Área) (%s): %.2f\n", nomedacidadea02, areaa02);
+    printf("Carta 1 - (Densidade Populacional) (%s): %.2f\n", nomedacidade, densidadepopulacional);
+    printf("Carta 2 - (Densidade Populacional) (%s): %.2f\n", nomedacidadea02,densidadepopulacionala02);
+    printf("Você empatou!\n\n");
+    } else {
+    printf("Carta 1 - (Área) (%s): %.2f\n", nomedacidade, area);
+    printf("Carta 2 - (Área) (%s): %.2f\n", nomedacidadea02, areaa02);
+    printf("Carta 1 - (Densidade Populacional) (%s): %.2f\n", nomedacidade, densidadepopulacional);
+    printf("Carta 2 - (Densidade Populacional) (%s): %.2f\n", nomedacidadea02,densidadepopulacionala02);
+    printf("Carta 2 - (%s) Venceu!\n\n", nomedacidadea02);
+    }
+    }
+    if ( (primeiroAtributo == 5) && (segundoAtributo == 3) ){
+      if(resultado1 && resultado2) {
+        printf("Carta 1 - (PIB) (%s): %.2f\n", nomedacidade, pib);
+        printf("Carta 2 - (PIB) (%s): %.2f\n", nomedacidadea02, piba02);
+        printf("Carta 1 - (Densidade Populacional) (%s): %.2f\n", nomedacidade, densidadepopulacional);
+        printf("Carta 2 - (Densidade Populacional) (%s): %.2f\n", nomedacidadea02,densidadepopulacionala02);
+        printf("Carta 1 - (%s) Venceu!\n\n", nomedacidade);
+      } else if (resultado1 != resultado2) {
+        printf("Carta 1 - (PIB) (%s): %.2f\n", nomedacidade, pib);
+        printf("Carta 2 - (PIB) (%s): %.2f\n", nomedacidadea02, piba02);
+        printf("Carta 1 - (Densidade Populacional) (%s): %.2f\n", nomedacidade, densidadepopulacional);
+        printf("Carta 2 - (Densidade Populacional) (%s): %.2f\n", nomedacidadea02,densidadepopulacionala02);
+        printf("Você empatou!\n\n");
+      } else {
+        printf("Carta 1 - (PIB) (%s): %.2f\n", nomedacidade, pib);
+        printf("Carta 2 - (PIB) (%s): %.2f\n", nomedacidadea02, piba02);
+        printf("Carta 1 - (Densidade Populacional) (%s): %.2f\n", nomedacidade, densidadepopulacional);
+        printf("Carta 2 - (Densidade Populacional) (%s): %.2f\n", nomedacidadea02,densidadepopulacionala02);
+        printf("Carta 2 - (%s) Venceu!\n\n", nomedacidadea02);
+      }
+      }
+      if ( (primeiroAtributo == 5) && (segundoAtributo == 4) ){
+        if(resultado1 && resultado2) {
+          printf("Carta 1 - (Pontos Turisticos) (%s): %d\n", nomedacidade, pontosturisticos);
+          printf("Carta 2 - (Pontos turisticos) (%s): %d\n", nomedacidadea02, pontosturisticosa02);
+          printf("Carta 1 - (Densidade Populacional) (%s): %.2f\n", nomedacidade, densidadepopulacional);
+          printf("Carta 2 - (Densidade Populacional) (%s): %.2f\n", nomedacidadea02,densidadepopulacionala02);
+          printf("Carta 1 - (%s) Venceu!\n\n", nomedacidade);
+      }  else if (resultado1 != resultado2) {
+        printf("Carta 1 - (Pontos Turisticos) (%s): %d\n", nomedacidade, pontosturisticos);
+        printf("Carta 2 - (Pontos turisticos) (%s): %d\n", nomedacidadea02, pontosturisticosa02);
+        printf("Carta 1 - (Densidade Populacional) (%s): %.2f\n", nomedacidade, densidadepopulacional);
+        printf("Carta 2 - (Densidade Populacional) (%s): %.2f\n", nomedacidadea02,densidadepopulacionala02);
+        printf("Você empatou!\n\n");
+      } else {
+        printf("Carta 1 - (Pontos Turisticos) (%s): %d\n", nomedacidade, pontosturisticos);
+        printf("Carta 2 - (Pontos turisticos) (%s): %d\n", nomedacidadea02, pontosturisticosa02);
+        printf("Carta 1 - (Densidade Populacional) (%s): %.2f\n", nomedacidade, densidadepopulacional);
+        printf("Carta 2 - (Densidade Populacional) (%s): %.2f\n", nomedacidadea02,densidadepopulacionala02);
+        printf("Carta 2 - (%s) Venceu!\n\n", nomedacidadea02);
+      }
+      }
 
 
 /*
+////////////////////////////////////////////////////////
+estruturada usada para facilitar a processo;
+
 if ( (primeiroAtributo == ) && (segundoAtributo == ) ){
     if(resultado1 && resultado2) {
       printf("Você Venceu!\n");
@@ -443,6 +696,7 @@ if ( (primeiroAtributo == ) && (segundoAtributo == ) ){
   } else {
     printf("Você perdeu!\n");
 
+////////////////////////////////////////////////////////
 */
 
 /*
